@@ -4,41 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilo externa -->
     <link rel="stylesheet" href="style.css">
+    <!-- Enlace a los iconos de Boxicons desde un CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header class="inicio">
         <h1>Reporte de Programas</h1>
     </header>
+
+    <!-- Sección introductoria -->
     <section class="inicio">
         <div class="intro">
             <h4>
                 Ingresa tu función f(x), un valor inicial y listo. Te entregaremos las iteraciones, el valor de xi en cada paso, la aproximación final de la raíz y el error. ¡Prueba ahora!
-                
-                Recuerda: El método funciona mejor con un valor inicial cercano a la raíz.</h4>
+                Recuerda: El método funciona mejor con un valor inicial cercano a la raíz.
+            </h4>
         </div>
     </section>
 
     <main>
+        <!-- Sección del método de Newton-Raphson -->
         <section id="Metodo1" class="Metodos">
             <h1>Metodo de Newton-Raphson</h1>
             <form id="newtonRaphsonForm">
+                <!-- Campo para el valor inicial 'Xi' -->
                 <label for="xi">Valor inicial (Xi):</label>
                 <input type="number" id="xi" name="xi" step="any" required>
                 <br><br>
+                <!-- Campo para la ecuación f(x) -->
                 <label for="equation">Ecuación f(x):</label>
                 <input type="text" id="equation" name="equation" required>
                 <br><br>
+                <!-- Botón para enviar el formulario y calcular -->
                 <button id="button" type="submit">Calcular</button>
             </form>
-
         </section>
+
+        <!-- Sección para mostrar los resultados -->
         <section id="result" class="result">
             <h2>Resultado:</h2>
+            <!-- Elemento para mostrar los valores iniciales -->
             <p id="initialValues"></p>
+            <!-- Tabla para mostrar las iteraciones y resultados -->
             <table id="iterationsTable" border="1">
                 <thead>
                     <tr>
@@ -56,12 +68,15 @@
         </section>
     </main>
 
+    <!-- Menú de navegación lateral -->
     <nav id="side-menu" class="side-nav">
         <div class="nav-header">
+            <!-- Botón para alternar el menú -->
             <button class="toggle-btn">
                 <i class='bx bx-menu'></i>
             </button>
         </div>
+        <!-- Lista de elementos del menú de navegación -->
         <ul class="nav-list">
             <li class="nav-item">
                 <a href="index.html">
@@ -97,6 +112,8 @@
             </li>
         </ul>
     </nav>
+
+    <!-- Enlace al archivo JavaScript externo para realizar los cálculos -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
     <script src="scriptNR.js"></script>
 </body>

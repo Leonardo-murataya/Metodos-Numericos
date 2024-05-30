@@ -4,45 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilo externa -->
     <link rel="stylesheet" href="style.css">
+    <!-- Enlace a los iconos de Boxicons desde un CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header class="inicio">
         <h1>Reporte de Programas</h1>
     </header>
+
+    <!-- Sección introductoria -->
     <section class="inicio">
         <div class="intro">
             <h4>
                 Ingresa tu función f(x), el intervalo [a, b] y el número de subintervalos. Te entregaremos el valor de la integral aproximado, con mayor precisión a medida que aumentes los subintervalos. ¡Prueba ahora!
-
-Recuerda: Funciona mejor con funciones de curva suave.</h4>
+                Recuerda: Funciona mejor con funciones de curva suave.
+            </h4>
         </div>
     </section>
-        <main>
+
+    <main>
+        <!-- Sección del método de la regla del trapecio -->
         <section id="Metodo2" class="Metodos">
             <h1>Regla del Trapecio</h1>
             <form id="trapezoidForm">
+                <!-- Campo para el valor de 'a' -->
                 <label for="a">Valor de a:</label>
                 <input type="number" id="a" name="a" step="any" required>
                 <br><br>
+                <!-- Campo para el valor de 'b' -->
                 <label for="b">Valor de b:</label>
                 <input type="number" id="b" name="b" step="any" required>
                 <br><br>
+                <!-- Campo para la ecuación f(x) -->
                 <label for="equation">Ecuación f(x):</label>
                 <input type="text" id="equation" name="equation" required>
                 <br><br>
+                <!-- Campo para el valor de 'n' (número de subintervalos) -->
                 <label for="n">Valor de n:</label>
                 <input type="number" id="n" name="n" step="1" min="1" required>
                 <br><br>
+                <!-- Botón para enviar el formulario y calcular la integral -->
                 <button id="button" type="submit">Calcular</button>
             </form>
         </section>
+
+        <!-- Sección para mostrar los resultados -->
         <section id="result2" class="result2">
             <h2>Resultado:</h2>
+            <!-- Elemento para mostrar la altura de los trapecios -->
             <p id="height"></p>
+            <!-- Tabla para mostrar los valores de Xi y f(Xi) -->
             <table id="valuesTable" border="1">
                 <thead>
                     <tr>
@@ -53,15 +69,20 @@ Recuerda: Funciona mejor con funciones de curva suave.</h4>
                 <tbody>
                 </tbody>
             </table>
+            <!-- Elemento para mostrar el resultado final -->
             <p id="result"></p>
         </section>
-        </main>
-        <nav id="side-menu" class="side-nav">
+    </main>
+
+    <!-- Menú de navegación lateral -->
+    <nav id="side-menu" class="side-nav">
         <div class="nav-header">
+            <!-- Botón para alternar el menú -->
             <button class="toggle-btn">
                 <i class='bx bx-menu'></i>
             </button>
         </div>
+        <!-- Lista de elementos del menú de navegación -->
         <ul class="nav-list">
             <li class="nav-item">
                 <a href="index.html">
@@ -96,7 +117,9 @@ Recuerda: Funciona mejor con funciones de curva suave.</h4>
                 </a>
             </li>
         </ul>
-        </nav>
+    </nav>
+
+    <!-- Enlace al archivo JavaScript externo para realizar los cálculos -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
     <script src="scriptRT.js"></script>
 </body>

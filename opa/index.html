@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilo externa -->
     <link rel="stylesheet" href="style.css">
+    <!-- Enlace a los iconos de Boxicons desde un CDN -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
+    <!-- Encabezado de la página -->
     <header class="inicio">
         <h1>Bienvenido a nuestro proyecto</h1>
     </header>
+
+    <!-- Sección principal del contenido -->
     <section class="iniciopagina">
         <h1>Este es un proyecto desarrollado por un equipo de 3 ingenieros de software.</h1>
         
+        <!-- Texto de presentación del proyecto -->
         <pre>
             ¡Bienvenido a nuestra página! Aquí, te ofrecemos herramientas interactivas para resolver ecuaciones y encontrar áreas bajo curvas de manera precisa y eficiente. Nuestro enfoque se centra en dos métodos fundamentales: el método de Newton-Raphson y la regla del trapecio. Ambos métodos son pilares en el análisis numérico y tienen aplicaciones extensas en matemáticas, ingeniería y ciencias aplicadas.
                 
@@ -21,9 +27,10 @@
                 
             El método de Newton-Raphson es un algoritmo iterativo utilizado para encontrar aproximaciones sucesivas de las raíces de una función. Dado un valor inicial cercano a la raíz, este método utiliza la derivada de la función para converger rápidamente hacia la solución. La fórmula de actualización es:
                 
-             <img src="img/newton1.png" width="400px" height="100">
+            <!-- Imagen de la fórmula del método de Newton-Raphson -->
+            <img src="img/newton1.png" width="400px" height="100">
                 
-             Donde:
+            Donde:
                 - \( x_n \) es la aproximación actual.
                 - \( f(x_n) \) es el valor de la función en \( x_n \).
                 - \( f'(x_n) \) es el valor de la derivada de la función en \( x_n \).
@@ -32,13 +39,15 @@
                 
             Regla del Trapecio
                 
-             La regla del trapecio es una técnica de integración numérica utilizada para calcular el área bajo una curva. Esta regla aproxima la región bajo la curva mediante una serie de trapezoides y suma sus áreas para obtener una estimación de la integral definida. La fórmula básica para un intervalo \([a, b]\) es:
+            La regla del trapecio es una técnica de integración numérica utilizada para calcular el área bajo una curva. Esta regla aproxima la región bajo la curva mediante una serie de trapezoides y suma sus áreas para obtener una estimación de la integral definida. La fórmula básica para un intervalo \([a, b]\) es:
                 
-                <img src="img/trap1.png" width="600px" height="100">
+            <!-- Imagen de la fórmula básica de la regla del trapecio -->
+            <img src="img/trap1.png" width="600px" height="100">
                 
             Para una mejor precisión, el intervalo puede dividirse en \(n\) subintervalos, aplicando la fórmula de manera repetida:
                 
-                <img src="img/trap2.png" width="800px" height="100">
+            <!-- Imagen de la fórmula de la regla del trapecio con subintervalos -->
+            <img src="img/trap2.png" width="800px" height="100">
                 
             Donde:
                 - \( x_0 = a \)
@@ -49,14 +58,17 @@
                 
             Esperamos que encuentres nuestras herramientas útiles y que te ayuden a comprender y aplicar estos métodos fundamentales de cálculo numérico. ¡Comienza a explorar y resolver tus problemas matemáticos con facilidad!
         </pre>
-    
     </section>
+
+    <!-- Menú de navegación lateral -->
     <nav id="side-menu" class="side-nav">
         <div class="nav-header">
+            <!-- Botón para alternar el menú -->
             <button class="toggle-btn">
                 <i class='bx bx-menu'></i>
             </button>
         </div>
+        <!-- Lista de elementos del menú de navegación -->
         <ul class="nav-list">
             <li class="nav-item">
                 <a href="index.html">
@@ -92,6 +104,8 @@
             </li>
         </ul>
     </nav>
+
+    <!-- Enlace al archivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,278 +1,309 @@
+/* Estilo para el cuerpo del documento */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    justify-content: center; /* Alinea los elementos en el centro verticalmente */
 }
 
+/* Estilo para el encabezado */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: calc(100% - 60px); /* Resta el ancho del menú lateral */
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    width: calc(100% - 60px); /* Ancho completo menos el ancho del menú lateral */
 }
 
+/* Estilo para las secciones */
 section {
-    padding: 20px;
-    width: calc(100% - 60px); /* Resta el ancho del menú lateral */
+    padding: 20px; /* Espaciado interno */
+    width: calc(100% - 60px); /* Ancho completo menos el ancho del menú lateral */
 }
 
+/* Estilo para los inputs del formulario */
 form input {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 250px;
+    margin-bottom: 20px; /* Margen inferior */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 250px; /* Ancho fijo */
 }
 
+/* Estilo para el botón de envío del formulario */
 form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
 }
 
+/* Estilo para el botón al pasar el mouse */
 form input:hover {
-    background-color: #555; 
+    background-color: #555; /* Color de fondo más claro */
 }
 
+/* Estilo para el formulario */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
 }
 
+/* Estilo para las secciones de métodos */
 .Metodos {
-    border: #333 solid 1px;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    border: #333 solid 1px; /* Borde oscuro sólido */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px; /* Margen */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    width: 350px; /* Ancho fijo */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    justify-content: center; /* Alinea los elementos en el centro verticalmente */
 }
 
+/* Estilo para la clase 'inicio' */
 .inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    justify-content: center; /* Alinea los elementos en el centro verticalmente */
 }
 
+/* Estilo para la sección de autores */
 #autores {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    justify-content: center; /* Alinea los elementos en el centro verticalmente */
 }
 
+/* Estilo para los encabezados y párrafos en la sección de autores */
 #autores h2, #autores p {
-    text-align: center;
+    text-align: center; /* Centra el texto */
 }
 
+/* Estilo para los encabezados de nivel 2 */
 h2 {
-    color: #333;
+    color: #333; /* Color del texto oscuro */
 }
 
+/* Estilo para el menú lateral */
 .side-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 67px;
-    background-color: #333;
-    overflow: hidden;
-    transition: width 0.3s ease;
+    position: fixed; /* Posiciona el menú de forma fija */
+    top: 0; /* Alinea al borde superior */
+    left: 0; /* Alinea al borde izquierdo */
+    height: 100vh; /* Altura completa de la ventana */
+    width: 67px; /* Ancho inicial */
+    background-color: #333; /* Color de fondo oscuro */
+    overflow: hidden; /* Oculta el desbordamiento */
+    transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
 }
 
+/* Estilo para el menú lateral al pasar el mouse o estar abierto */
 .side-nav:hover,
 .side-nav.open {
-    width: 228px;
+    width: 228px; /* Ancho expandido */
 }
 
+/* Estilo para el encabezado del menú */
 .nav-header {
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
 }
 
+/* Estilo para el botón de alternar menú */
 .toggle-btn {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
+    background-color: transparent; /* Sin color de fondo */
+    border: none; /* Sin borde */
+    color: #fff; /* Color del texto blanco */
+    font-size: 24px; /* Tamaño del texto */
 }
 
+/* Estilo para la lista de navegación */
 .nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
 }
 
+/* Estilo para los elementos de la lista de navegación */
 .nav-item {
-    display: block;
-    padding: 0;
+    display: block; /* Se muestra como un bloque */
+    padding: 0; /* Sin relleno */
 }
 
+/* Estilo para los botones de navegación */
 .nav-btn {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 15px;
-    color: #fff;
-    text-align: left;
-    cursor: pointer;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    width: 100%; /* Ancho completo */
+    background-color: transparent; /* Sin color de fondo */
+    border: none; /* Sin borde */
+    padding: 15px; /* Espaciado interno */
+    color: #fff; /* Color del texto blanco */
+    text-align: left; /* Alinea el texto a la izquierda */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
+
+/* Estilo para los botones de navegación al pasar el mouse */
 .nav-btn:hover {
-    background-color: #555;
+    background-color: #555; /* Color de fondo más claro */
 }
 
+/* Estilo para los iconos en los botones de navegación */
 .nav-btn i {
-    margin-right: 10px;
-    text-align: center;
-    flex: 0 0 30px;
+    margin-right: 10px; /* Margen derecho */
+    text-align: center; /* Centra el icono */
+    flex: 0 0 30px; /* Tamaño fijo */
 }
 
+/* Estilo para el texto en los botones de navegación */
 .nav-btn span {
-    flex: 1;
-    text-align: left;
-    display: none;
-    transition: display 0.3s ease;
-    white-space: nowrap;
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: none; /* Oculta el texto inicialmente */
+    transition: display 0.3s ease; /* Transición suave para mostrar el texto */
+    white-space: nowrap; /* Evita el salto de línea */
 }
 
+/* Estilo para mostrar el texto en los botones de navegación al pasar el mouse o estar abierto */
 .side-nav:hover .nav-btn span,
 .side-nav.open .nav-btn span {
-    display: block;
+    display: block; /* Muestra el texto */
 }
 
+/* Estilo para los enlaces */
 a {
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado */
 }
 
-/* Divs: creadores */
-
+/* Estilo para la sección de autores */
 .autores {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: row; /* Organiza los elementos en una fila */
+    justify-content: space-around; /* Espacia los elementos uniformemente */
+    width: 100%; /* Ancho completo */
+    margin-top: 20px; /* Margen superior */
+    text-align: center; /* Centra el texto */
 }
 
-.murataya{
+/* Orden de los autores */
+.murataya {
     order: 1;
-
 }
-.omar{
+
+.omar {
     order: 2;
 }
-.angel{
+
+.angel {
     order: 3;
 }
 
+/* Estilo para las imágenes de los autores */
 .murataya img, .omar img, .angel img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    align-items: center;
+    width: 200px; /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    border-radius: 50%; /* Bordes redondeados (círculo) */
+    margin-bottom: 10px; /* Margen inferior */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
 }
 
+/* Estilo para la introducción */
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    border: 1px solid #000; /* Agrega un borde alrededor del texto */
-    padding: 20px; /* Agrega un poco de espacio alrededor del texto */
-    background-color: #f9f9f9; /* Agrega un fondo claro */
-    width: fit-content; /* Asegura que el cuadro se ajuste al contenido */
-    max-width: 300px; /* Establece un ancho máximo para el cuadro */
-    margin: 20px auto; /* Centra el cuadro horizontalmente */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    justify-content: center; /* Alinea los elementos en el centro verticalmente */
+    margin-top: 20px; /* Margen superior */
+    border: 1px solid #000; /* Borde sólido negro */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    width: fit-content; /* Ancho ajustado al contenido */
+    max-width: 300px; /* Ancho máximo */
+    margin: 20px auto; /* Margen vertical automático y horizontal centrado */
 }
 
+/* Estilo para el párrafo dentro de la introducción */
 .intro p {
-    line-height: 1.2; /* Ajusta el espaciado entre las líneas del párrafo */
+    line-height: 1.2; /* Espaciado entre líneas */
 }
 
-.intro{
-    transform: translateX(-320px); /* Desplaza los cuadros 50px a la izquierda */
+/* Estilo para el desplazamiento lateral */
+.intro {
+    transform: translateX(-320px); /* Desplazamiento hacia la izquierda */
 }
 
-#Metodo1, #Metodo2{
-    transform: translateX(-200px);
+#Metodo1,
+#Metodo2 {
+    transform: translateX(-200px); /* Desplazamiento hacia la izquierda */
 }
-
 
 #result {
-    transform: translateX(350px) translateY(-450px); /* Mueve la sección 50px a la derecha y 50px hacia arriba */
-    font-size: 1.5em; /* Hace que todo el texto sea un 20% más grande */
+    transform: translateX(350px) translateY(-450px); /* Desplazamiento hacia la derecha y arriba */
+    font-size: 1.5em; /* Tamaño de fuente */
 }
 
-#result2{
-    transform: translateX(350px) translateY(-450px);
-    font-size: 1.5em;
-
+#result2 {
+    transform: translateX(350px) translateY(-450px); /* Desplazamiento hacia la derecha y arriba */
+    font-size: 1.5em; /* Tamaño de fuente */
 }
 
 #trapezoidForm {
-    line-height: 0.9; /* Reduce el espaciado entre las líneas */
+    line-height: 0.9; /* Espaciado entre líneas reducido */
 }
 
-#trapezoidForm input, #trapezoidForm button {
-    margin-bottom: 1px; /* Reduce el margen inferior de los inputs y el botón */
+#trapezoidForm input,
+#trapezoidForm button {
+    margin-bottom: 1px; /* Margen inferior reducido */
 }
 
-#button{
-    background-color: #333; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 15px 32px; /* Espaciado interno del botón */
-    text-align: center; /* Alineación del texto del botón */
-    text-decoration: none; /* Estilo del texto del botón */
-    display: inline-block;
-    font-size: 16px; /* Tamaño del texto del botón */
-    margin: 4px 2px;
-    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima */
-    border-radius: 4px; /* Redondea las esquinas del botón */
+#button {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color del texto blanco */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor de puntero */
+    border-radius: 4px; /* Bordes redondeados */
 }
 
 .iniciopagina {
-    color: #333; /* Color del texto */
-    font-size: 1.2em; /* Tamaño del texto */
-    line-height: 1.5; /* Espaciado entre las líneas */
-    margin: 20px; /* Espaciado alrededor del texto */
-    text-align: justify; /* Alineación del texto */
+    color: #333; /* Color de texto oscuro */
+    font-size: 1.2em; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 20px; /* Margen */
+    text-align: justify; /* Alineación justificada */
 }
 
 .iniciopagina h1 {
-    color: #000; /* Color del título */
-    font-size: 2em; /* Tamaño del título */
-    text-align: center; /* Alineación del título */
-    margin-bottom: 20px; /* Espaciado debajo del título */
+    color: #000; /* Color de texto negro */
+    font-size: 2em; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
 .iniciopagina pre {
-    font-family: "Century Gothic", sans-serif; /* Fuente del texto */
-    color: #333; /* Color del texto */
-    font-size: 1.6em; /* Tamaño del texto */
-    line-height: 1.5; /* Espaciado entre las líneas */
-    margin: 20px; /* Espaciado alrededor del texto */
-    text-align: justify; /* Alineación del texto */
-    white-space: pre-line; /* Respeta los saltos de línea y los espacios en blanco */
-    padding: 0 20px; /* Agrega un espacio a los lados de la página */
-    margin-left: 100px;
+    font-family: "Century Gothic", sans-serif; /* Fuente */
+    color: #333; /* Color de texto */
+    font-size: 1.6em; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 20px; /* Margen */
+    text-align: justify; /* Alineación justificada */
+    white-space: pre-line; /* Espacios en blanco y saltos de línea */
+    padding: 0 20px; /* Relleno horizontal */
+    margin-left: 100px; /* Margen izquierdo */
 }
+
