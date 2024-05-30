@@ -89,7 +89,7 @@ h2 {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 60px;
+    width: 67px;
     background-color: #333;
     overflow: hidden;
     transition: width 0.3s ease;
@@ -97,7 +97,7 @@ h2 {
 
 .side-nav:hover,
 .side-nav.open {
-    width: 200px;
+    width: 228px;
 }
 
 .nav-header {
@@ -161,3 +161,118 @@ a {
     text-decoration: none;
 }
 
+/* Divs: creadores */
+
+.autores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.murataya{
+    order: 1;
+
+}
+.omar{
+    order: 2;
+}
+.angel{
+    order: 3;
+}
+
+.murataya img, .omar img, .angel img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: 1px solid #000; /* Agrega un borde alrededor del texto */
+    padding: 20px; /* Agrega un poco de espacio alrededor del texto */
+    background-color: #f9f9f9; /* Agrega un fondo claro */
+    width: fit-content; /* Asegura que el cuadro se ajuste al contenido */
+    max-width: 300px; /* Establece un ancho máximo para el cuadro */
+    margin: 20px auto; /* Centra el cuadro horizontalmente */
+}
+
+.intro p {
+    line-height: 1.2; /* Ajusta el espaciado entre las líneas del párrafo */
+}
+
+.intro{
+    transform: translateX(-320px); /* Desplaza los cuadros 50px a la izquierda */
+}
+
+#Metodo1, #Metodo2{
+    transform: translateX(-200px);
+}
+
+
+#result {
+    transform: translateX(350px) translateY(-450px); /* Mueve la sección 50px a la derecha y 50px hacia arriba */
+    font-size: 1.5em; /* Hace que todo el texto sea un 20% más grande */
+}
+
+#result2{
+    transform: translateX(350px) translateY(-450px);
+    font-size: 1.5em;
+
+}
+
+#trapezoidForm {
+    line-height: 0.9; /* Reduce el espaciado entre las líneas */
+}
+
+#trapezoidForm input, #trapezoidForm button {
+    margin-bottom: 1px; /* Reduce el margen inferior de los inputs y el botón */
+}
+
+#button{
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 15px 32px; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto del botón */
+    text-decoration: none; /* Estilo del texto del botón */
+    display: inline-block;
+    font-size: 16px; /* Tamaño del texto del botón */
+    margin: 4px 2px;
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima */
+    border-radius: 4px; /* Redondea las esquinas del botón */
+}
+
+.iniciopagina {
+    color: #333; /* Color del texto */
+    font-size: 1.2em; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre las líneas */
+    margin: 20px; /* Espaciado alrededor del texto */
+    text-align: justify; /* Alineación del texto */
+}
+
+.iniciopagina h1 {
+    color: #000; /* Color del título */
+    font-size: 2em; /* Tamaño del título */
+    text-align: center; /* Alineación del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.iniciopagina pre {
+    font-family: "Century Gothic", sans-serif; /* Fuente del texto */
+    color: #333; /* Color del texto */
+    font-size: 1.6em; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre las líneas */
+    margin: 20px; /* Espaciado alrededor del texto */
+    text-align: justify; /* Alineación del texto */
+    white-space: pre-line; /* Respeta los saltos de línea y los espacios en blanco */
+    padding: 0 20px; /* Agrega un espacio a los lados de la página */
+    margin-left: 100px;
+}

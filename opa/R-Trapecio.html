@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="inicio">
+        <h1>Reporte de Programas</h1>
+    </header>
+    <section class="inicio">
+        <div class="intro">
+            <h4>
+                Ingresa tu función f(x), el intervalo [a, b] y el número de subintervalos. Te entregaremos el valor de la integral aproximado, con mayor precisión a medida que aumentes los subintervalos. ¡Prueba ahora!
+
+Recuerda: Funciona mejor con funciones de curva suave.</h4>
+        </div>
+    </section>
+        <main>
+        <section id="Metodo2" class="Metodos">
+            <h1>Regla del Trapecio</h1>
+            <form id="trapezoidForm">
+                <label for="a">Valor de a:</label>
+                <input type="number" id="a" name="a" step="any" required>
+                <br><br>
+                <label for="b">Valor de b:</label>
+                <input type="number" id="b" name="b" step="any" required>
+                <br><br>
+                <label for="equation">Ecuación f(x):</label>
+                <input type="text" id="equation" name="equation" required>
+                <br><br>
+                <label for="n">Valor de n:</label>
+                <input type="number" id="n" name="n" step="1" min="1" required>
+                <br><br>
+                <button id="button" type="submit">Calcular</button>
+            </form>
+        </section>
+        <section id="result2" class="result2">
+            <h2>Resultado:</h2>
+            <p id="height"></p>
+            <table id="valuesTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Xi</th>
+                        <th>f(Xi)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <p id="result"></p>
+        </section>
+        </main>
+        <nav id="side-menu" class="side-nav">
+        <div class="nav-header">
+            <button class="toggle-btn">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html">
+                    <button class="nav-btn" data-target="inicio">
+                        <i class='bx bx-home'></i>
+                        <span>Inicio</span>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="M-Newton.html">
+                    <button class="nav-btn" data-target="Metodo1">
+                        <i class='bx bxs-calculator'></i>
+                        <span>Metodo de Newton-Raphson</span>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="R-Trapecio.html">
+                    <button class="nav-btn" data-target="Metodo2">
+                        <i class='bx bxs-calculator'></i>
+                        <span>Regla del Trapecio</span>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="creadores.html">
+                    <button class="nav-btn" data-target="Creadores">
+                        <i class='bx bxs-user'></i>
+                        <span>Creadores</span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
+    <script src="scriptRT.js"></script>
+</body>
+
+</html>
