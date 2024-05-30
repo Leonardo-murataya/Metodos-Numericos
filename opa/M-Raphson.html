@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="inicio">
+        <h1>Reporte de Programas</h1>
+    </header>
+    <section class="inicio">
+        <h1>test</h1>
+    </section>
+        <main>
+        <section id="Metodo2" class="Metodos">
+            <h1>Metodo de Raphson</h1>
+            <form id="raphsonForm">
+                <label for="inputValue">Valor inicial:</label>
+                <input type="number" id="inputValue" name="inputValue">
+
+                <label for="function">Función:</label>
+                <input type="text" id="function" name="function">
+
+                <label for="variable2">Variable 2:</label>
+                <input type="number" id="variable2" name="variable2">
+
+                <label for="variable3">Variable 3:</label>
+                <input type="number" id="variable3" name="variable3">
+
+                <input type="submit" value="Calcular">
+                <input type="text" disabled placeholder="Resultado">
+            </form>
+        </section>
+        </main>
+        <nav id="side-menu" class="side-nav">
+        <div class="nav-header">
+            <button class="toggle-btn">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="index.html">
+                    <button class="nav-btn" data-target="inicio">
+                        <i class='bx bx-home'></i>
+                        <span>Inicio</span>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="M-Newton.html">
+                    <button class="nav-btn" data-target="Metodo1">
+                        <i class='bx bxs-calculator'></i>
+                        <span>Metodo de Newton</span>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="M-Raphson.html">
+                    <button class="nav-btn" data-target="Metodo2">
+                        <i class='bx bxs-calculator'></i>
+                        <span>Metodo de Raphson</span>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="creadores.html">
+                    <button class="nav-btn" data-target="Creadores">
+                        <i class='bx bxs-user'></i>
+                        <span>Creadores</span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    <script src="script.js"></script>
+</body>
+
+</html>
